@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class Main {
 
     public static ArrayList<String> readFromInputFile(String fileName) {
-
         ArrayList<String> strings = new ArrayList<>();
 
         try(FileReader reader = new FileReader(fileName)) {
@@ -58,4 +57,3 @@ public class Main {
         wrightToOutputFile(outputFileName, outputStrings);
     }
 }
-
