@@ -33,7 +33,7 @@
                             <jar>target/Sorter-1.0-SNAPSHOT.jar</jar>
                             <errTitle>encc</errTitle>
                             <classPath>
-                                <mainClass>myPackage.myMainClass</mainClass>
+                                <mainClass>src.main.java.com.mycompany.app.Main</mainClass>
                                 <addDependencies>true</addDependencies>
                                 <preCp>anything</preCp>
                             </classPath>
