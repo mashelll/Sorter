@@ -41,8 +41,8 @@ public class Main {
 
     public static void main(String[] args)  {
 
-        String inputFileName = args[0];
-        String outputFileName = args[1];
+        String inputFileName = args[1];
+        String outputFileName = args[3];
 
         ArrayList<String> strings;
         strings = readFromInputFile(inputFileName);
