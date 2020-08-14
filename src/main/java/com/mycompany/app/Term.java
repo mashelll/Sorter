@@ -1,12 +1,28 @@
 package com.mycompany.app;
 
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class Term {
+public class Term implements Comparable<Term>{
 
-    String content;
-    ArrayList<Term> childTermsArray;
+    private String content;
+    private List<Term> childTermsArray;
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setChildTermsArray(List<Term> childTermsArray) {
+        this.childTermsArray = childTermsArray;
+    }
+
+    public List<Term> getChildTermsArray() {
+        return childTermsArray;
+    }
 
     public Term(String content) {
         this.content = content;
@@ -26,8 +42,9 @@ public class Term {
     }
 
     private String toWord() {
-        if (this.isSimple())
+        if (this.isSimple()) {
             return this.content;
+        }
         String word = "";
         for (int i = 0; i < this.content.length(); i++) {
             String one_symbol = this.content.substring(i, i + 1);
