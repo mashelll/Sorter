@@ -44,6 +44,15 @@ public class Main {
         String inputFileName = args[1];
         String outputFileName = args[3];
 
+        for (int i = 0; i < args.length; i++) {
+
+            if (args[i].equals("-i"))
+                inputFileName = args[i + 1];
+
+            if (args[i].equals("-o"))
+                outputFileName = args[i + 1];
+        }
+
         ArrayList<String> strings;
         strings = readFromInputFile(inputFileName);
 
